@@ -1,0 +1,9 @@
+{
+  "name": "express-brute-nedb",
+  "version": "1.0.0",
+  "description": "An express-brute store using nedb",
+  "main": "index.js",
+  "repository": "https://github.com/natsukagami/express-brute-nedb",
+  "author": "Natsu Kagami <natsukagami@gmail.com>",
+  "license": "MIT"
+}
