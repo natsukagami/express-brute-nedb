@@ -32,9 +32,10 @@ app.post('/auth',
 
 Available parameters:
 
--	`filename` Path to the database file. If left empty, in-memory database is used. Defaults to nothing (which is NOT recommended).
+- `filename` Path to the database file. If left empty, in-memory database is used. Defaults to nothing (which is NOT recommended).
 - `prefix` A prefix to the keys used in express-brute. However, multiple instances of express-brute have their own unique keys so it is not needed to provide a prefix at all. 
 - `debug` Set a debug function, that receives an error when something goes wrong. Defaults to `noop`.
+- `compactInterval` Sets an interval to auto-compact the NeDB database file. This is required since the write-only policy of NeDB, used with large write count of Express Brute can produce a very large file. The default interval is 2 minutes (120000 miliseconds).
 
 ### License
 
